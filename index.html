@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Mitchell's personal Project Hub - A premium showcase of work and ideas.">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,19 @@
                 <button class="secondary-btn">Learn More</button>
             </div>
         </section>
-
+        <section style="text-align: center; padding: 50px; background: rgba(255,255,255,0.1); margin: 20px; border-radius: 15px;">
+    <h2>Python Test Zone</h2>
+    <p id="output-field">Waiting for Python...</p>
+    
+    <script type="py">
+        from datetime import datetime
+        import pydoc
+        
+        # This is actual Python running in your browser!
+        now = datetime.now().strftime("%I:%M:%S %p")
+        display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field")
+    </script>
+    </section>
         <footer>
             <p>&copy; 2026 Mitchell. Built with precision and style.</p>
         </footer>
