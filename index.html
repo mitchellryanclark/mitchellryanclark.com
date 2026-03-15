@@ -31,10 +31,11 @@
 
             <script type="py">
                 from datetime import datetime
+                from pyscript import display
                 
                 # This is actual Python running in your browser!
                 now = datetime.now().strftime("%I:%M:%S %p")
-                display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field")
+                display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field", append=False)
             </script>
         </section>
     </main>
