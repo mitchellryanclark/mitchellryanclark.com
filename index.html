@@ -1,62 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitchell's Project Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Mitchell Ryan Clark | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Mitchell's personal Project Hub - A premium showcase of work and ideas.">
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
-
 <body>
-    <div class="glass-background"></div>
-    <div class="blob-wrapper">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://github.com/mitchellryanclark/v5-portal" target="_blank">Projects</a></li>
+                <li><a href="mailto:mitchell@mitchellryanclark.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <header>
-            <div class="logo">M</div>
-            <nav>
-                <li><a href="https://github.com/mitchellryanclark/v5-portal" target="_blank">Projects</a></li>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link nav-cta">Get in Touch</a>
-            </nav>
-        </header>
-
-        <section class="hero">
-            <h1 class="reveal-text">Welcome to Mitchell's Project Hub</h1>
-            <p class="subtitle reveal-text-delay">Mitchell's Project Hub</p>
-            <div class="cta-group">
-                <button class="primary-btn">Explore Work</button>
-                <button class="secondary-btn">Learn More</button>
-            </div>
+        <section id="hero">
+            <h1>Mitchell Ryan Clark</h1>
+            <p>AI Career Pivot | Software Development | Drum Corps Alum</p>
         </section>
-        <section style="text-align: center; padding: 50px; background: rgba(255,255,255,0.1); margin: 20px; border-radius: 15px;">
-    <h2>Python Test Zone</h2>
-    <p id="output-field">Waiting for Python...</p>
-    
-    <script type="py">
-        from datetime import datetime
-        import pydoc
-        
-        # This is actual Python running in your browser!
-        now = datetime.now().strftime("%I:%M:%S %p")
-        display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field")
-    </script>
-    </section>
-        <footer>
-            <p>&copy; 2026 Mitchell. Built with precision and style.</p>
-        </footer>
-    </main>
-</body>
 
+        <section style="text-align: center; padding: 50px; background: #0021A5; color: white; margin: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <h2>Python Test Zone</h2>
+            <p id="output-field">Waiting for Python...</p>
+
+            <script type="py">
+                from datetime import datetime
+                
+                # This is actual Python running in your browser!
+                now = datetime.now().strftime("%I:%M:%S %p")
+                display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field")
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mitchell Ryan Clark. Built with Python & PyScript.</p>
+    </footer>
+</body>
 </html>
