@@ -51,13 +51,34 @@ body {
     animation: move 20s infinite alternate;
 }
 
-.blob-1 { top: -10%; left: -10%; background: var(--primary); }
-.blob-2 { bottom: -10%; right: -10%; background: #ec4899; animation-delay: -5s; }
-.blob-3 { top: 40%; left: 60%; background: #0ea5e9; animation-delay: -10s; }
+.blob-1 {
+    top: -10%;
+    left: -10%;
+    background: var(--primary);
+}
+
+.blob-2 {
+    bottom: -10%;
+    right: -10%;
+    background: #ec4899;
+    animation-delay: -5s;
+}
+
+.blob-3 {
+    top: 40%;
+    left: 60%;
+    background: #0ea5e9;
+    animation-delay: -10s;
+}
 
 @keyframes move {
-    from { transform: translate(0, 0) scale(1); }
-    to { transform: translate(100px, 50px) scale(1.1); }
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(100px, 50px) scale(1.1);
+    }
 }
 
 main {
@@ -262,6 +283,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 3rem; }
-    nav { display: none; }
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        display: none;
+    }
 }
