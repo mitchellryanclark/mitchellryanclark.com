@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitchell Ryan Clark | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="https://github.com/mitchellryanclark/v5-portal" target="_blank">Projects</a></li>
-                <li><a href="mailto:mitchell@mitchellryanclark.com">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="blob-wrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="glass-background"></div>
 
     <main>
-        <section id="hero">
-            <h1>Mitchell Ryan Clark</h1>
-            <p>AI Career Pivot | Software Development | Drum Corps Alum</p>
+        <header>
+            <div class="logo">Mitchell Clark</div>
+            <nav>
+                <a href="/" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="mailto:mitchell@mitchellryanclark.com" class="nav-cta">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>AI Career Pivot &<br>Software Development</h1>
+            <p class="subtitle">Drum Corps Alum | Building intelligent tools & modern web experiences</p>
+            <div class="cta-group">
+                <a href="#projects" class="primary-btn" style="text-decoration: none;">View Projects</a>
+                <a href="mailto:mitchell@mitchellryanclark.com" class="secondary-btn" style="text-decoration: none;">Get in Touch</a>
+            </div>
         </section>
 
-        <section style="text-align: center; padding: 50px; background: #0021A5; color: white; margin: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-            <h2>Python Test Zone</h2>
-            <p id="output-field">Waiting for Python...</p>
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <div class="project-tag">My Work</div>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Timesheet Project -->
+                <a href="https://github.com/mitchellryanclark/TimesheetApp" class="project-card" target="_blank">
+                    <div class="project-tag">JavaScript / PWA</div>
+                    <h3 class="project-name">Timesheet App</h3>
+                    <p class="project-desc">A professional Progressive Web App designed for tracking hours and generating PDF reports. Built with a focus on ease of use and mobile-first accessibility.</p>
+                    <div class="project-link-text">View on GitHub</div>
+                </a>
+
+                <!-- V5 Portal -->
+                <a href="https://github.com/mitchellryanclark/v5-portal" class="project-card" target="_blank">
+                    <div class="project-tag">Web Development</div>
+                    <h3 class="project-name">V5 Portal</h3>
+                    <h3 class="project-name" style="display:none">v5-portal</h3> <!-- Keep internal name ref -->
+                    <p class="project-desc">A comprehensive portal for managing system configurations and data visualizations. Focused on high-performance dashboards and user workflow efficiency.</p>
+                    <div class="project-link-text">View on GitHub</div>
+                </a>
+            </div>
+        </section>
+
+        <section style="text-align: center; padding: 50px; background: rgba(0, 33, 165, 0.2); color: white; margin: 40px 0; border-radius: 24px; border: 1px solid var(--border); backdrop-filter: blur(10px);">
+            <h2 style="margin-bottom: 20px;">Python Test Zone</h2>
+            <p id="output-field" style="font-size: 1.2rem; opacity: 0.9;">Waiting for Python...</p>
 
             <script type="py">
                 from datetime import datetime
@@ -38,10 +77,10 @@
                 display(f"Hello Mitchell! Python is live. The time is {now}", target="output-field", append=False)
             </script>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Mitchell Ryan Clark. Built with Python & PyScript.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Mitchell Ryan Clark. Built with Python, PyScript & modern CSS.</p>
+        </footer>
+    </main>
 </body>
 </html>
